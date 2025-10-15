@@ -1,0 +1,17 @@
+name: ot_corridor_min
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - geopandas
+  - shapely>=2
+  - pyproj
+  - fiona
+  - pandas
+  - numpy
+  - rtree
+  - laspy>=2.3
+  - pdal            # 可选（若不想用 LAZ 压缩，可删）
+  - pip
+  - pip:
+      - tqdm
