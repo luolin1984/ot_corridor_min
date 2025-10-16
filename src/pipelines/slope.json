@@ -1,0 +1,14 @@
+{
+  "pipeline": [
+    "${INPUT_DTM}",
+    { "type":"filters.hag" },
+    { "type":"writers.gdal",
+      "filename":"${OUTPUT_SLOPE}",
+      "gdaldriver":"GTiff",
+      "output_type":"slope",
+      "resolution":1.0,
+      "nodata":-9999,
+      "data_type":"float32"
+    }
+  ]
+}

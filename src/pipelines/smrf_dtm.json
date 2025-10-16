@@ -1,0 +1,13 @@
+{ "pipeline": [
+  { "type":"readers.las" },
+  { "type":"filters.smrf", "scalar":1.25, "slope":0.15, "threshold":0.5, "window":16 },
+  { "type":"filters.range", "limits":"Classification[2:2]" },
+  { "type":"writers.gdal",
+    "gdaldriver":"GTiff",
+    "output_type":"min",
+    "resolution":1.0,
+    "nodata":-9999,
+    "dimension":"Z",
+    "data_type":"float32"
+  }
+]}
