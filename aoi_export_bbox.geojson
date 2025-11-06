@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "aoi_export_bbox",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 113.385984322087381, 23.498577532196123 ], [ 113.385984322087381, 23.574364920368573 ], [ 113.46427707846388, 23.574364920368573 ], [ 113.46427707846388, 23.498577532196123 ], [ 113.385984322087381, 23.498577532196123 ] ] ] } }
+]
+}
