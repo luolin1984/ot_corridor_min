@@ -1,0 +1,12 @@
+{ "pipeline":[
+  { "type":"readers.las" },
+  { "type":"filters.range", "limits":"HeightAboveGround[0:]" },
+  { "type":"writers.gdal",
+    "gdaldriver":"GTiff",
+    "output_type":"max",
+    "resolution":1.0,
+    "dimension":"HeightAboveGround",
+    "data_type":"float32",
+    "nodata":-9999
+  }
+]}
